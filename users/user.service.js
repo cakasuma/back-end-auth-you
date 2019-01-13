@@ -1,7 +1,7 @@
-import config from "config.json";
+import config from "../config.json";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
-import db from "_helpers/db";
+import db from "../_helpers/db";
 
 const User = db.User;
 
@@ -61,7 +61,7 @@ const update = async (id, userParam) => {
   await user.save();
 };
 
-const _delete = id => {
+const _delete = async (id) => {
   await User.findByIdAndRemove(id);
 };
 

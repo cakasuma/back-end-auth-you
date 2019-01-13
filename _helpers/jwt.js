@@ -1,5 +1,5 @@
 import expressJwt from "express-jwt";
-import config from "config.json";
+import config from "../config.json";
 import userService from "../users/user.service";
 
 const isRevoked = async (req, payload, done) => {
@@ -12,10 +12,12 @@ const isRevoked = async (req, payload, done) => {
   done();
 };
 
-export const jwt = () => {
+const jwt = () => {
   const secret = config.secret;
 
   return expressJwt({ secret, isRevoked }).unless({
     path: ["/users/authenticate", "/users/register"]
   });
 };
+
+module.exports = jwt;

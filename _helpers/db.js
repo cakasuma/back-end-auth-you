@@ -1,9 +1,10 @@
-import config from "config.json";
+import config from "../config.json";
 import mongoose from "mongoose";
 
-mongoose.connect(process.env.MONGODB_URI || config.connectionString);
+mongoose.connect((process.env.MONGODB_URI || config.connectionString), { useNewUrlParser: true });
+mongoose.set('useCreateIndex', true);
 mongoose.Promise = global.Promise;
 
 module.exports = {
-  User: import("../users/user.model")
+  User: require("../users/user.model")
 };

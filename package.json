@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/cakasuma/back-end-auth-you#readme",
   "dependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
@@ -30,5 +31,12 @@
     "mongodb": "^3.1.10",
     "mongoose": "^5.4.3",
     "rootpath": "^0.1.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "nodemon": "^1.18.9"
   }
 }
