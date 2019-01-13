@@ -1,4 +1,4 @@
 {
-    "connectionString": "mongodb://localhost/auth-you-api",
+    "connectionString": "mongodb://cakasuma:cakasuma123@ds151014.mlab.com:51014/auth-you-api",
     "secret": "Authyou123"
 }
