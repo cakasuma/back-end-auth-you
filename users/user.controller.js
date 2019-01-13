@@ -11,7 +11,7 @@ const authenticate = (req, res, next) => {
 
 const register = (req, res, next) => {
     userService.create(req.body)
-        .then(() => res.json({}))
+        .then(() => res.json({ message: 'you account successfully created' }))
         .catch(err => next(err));
 }
 
