@@ -1,0 +1,4 @@
+{
+    "connectionString": "mongodb://localhost/auth-you-api",
+    "secret": "Authyou123"
+}

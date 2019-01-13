@@ -1,0 +1,29 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "back-end auth-you",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "start-dev": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cakasuma/back-end-auth-you.git"
+  },
+  "keywords": [
+    "auth"
+  ],
+  "author": "cakasuma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cakasuma/back-end-auth-you/issues"
+  },
+  "homepage": "https://github.com/cakasuma/back-end-auth-you#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.4.3"
+  }
+}
