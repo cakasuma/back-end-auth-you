@@ -21,9 +21,14 @@
   },
   "homepage": "https://github.com/cakasuma/back-end-auth-you#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
     "express": "^4.16.4",
+    "express-jwt": "^5.3.1",
+    "jsonwebtoken": "^8.4.0",
     "mongodb": "^3.1.10",
-    "mongoose": "^5.4.3"
+    "mongoose": "^5.4.3",
+    "rootpath": "^0.1.2"
   }
 }
